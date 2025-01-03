@@ -12,16 +12,11 @@ public class FindDuplicArray {
         int a[] = {1,2,1,2,3,4,5,6};
         Set<Integer> set = new HashSet<Integer>();
         List<Integer> list = new ArrayList<Integer>();
-
         for(Integer num:a){
-            if(set.add(num)){
-               set.add(num);
-            }
-            else{
+            if(set.add(num)==false){
                 list.add(num);
             }
         }
-        System.out.println(set);
         System.out.println("Duplicate elements: " + list);
 
     }
