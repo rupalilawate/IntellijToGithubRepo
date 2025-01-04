@@ -13,12 +13,12 @@ public class cricketbuxx {
         ChromeDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get("https://www.cricbuzz.com/live-cricket-scorecard/100272/ind-vs-nz-2nd-test-new-zealand-tour-of-india-2024");
+        driver.get("https://www.cricbuzz.com/live-cricket-scorecard/91814/aus-vs-ind-5th-test-india-tour-of-australia-2024-25");
         Thread.sleep(2000);
-        String batsMan = " Rachin Ravindra ";
+        String batsMan = " Sam Konstas ";
         String Run = driver.findElement(By.xpath("(//a[text()='"+batsMan+"'])[1]/parent::div/following-sibling::div[2]")).getText();
         System.out.println("Run of batsman:" + batsMan + "-  "+Run);
-        String baller = " Bumrah ";
+        String baller = " Jasprit Bumrah (c) ";
         String wicket = driver.findElement(By.xpath("(//a[text()='"+baller+"'])[1]/parent::div/following-sibling::div[4]")).getText();
         System.out.println("Wickets taken by " + baller + "-  "+wicket);
         driver.close();
