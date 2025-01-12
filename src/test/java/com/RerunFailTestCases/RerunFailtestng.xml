@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Lenovo/IdeaProjects/MavenForJenkins/src/test/java/com/RerunFailTestCases">
+        <classes>
+            <class name="com.RerunFailTestCases.TestCase1">
+                <methods>
+                    <include name="testmethod1"/>
+                </methods>
+            </class>
+            <class name="com.RerunFailTestCases.TestCase2">
+                <methods>
+                    <include name="testmethod2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
