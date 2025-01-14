@@ -9,7 +9,7 @@ public class ArmstrongNumber
         int temp=num;
 
         while(temp>0){
-            temp = temp/10;
+           temp = temp/10;
             count++;
         }
         //System.out.println(count);
