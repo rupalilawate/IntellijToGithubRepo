@@ -9,24 +9,26 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
+import java.util.List;
 
 public class amazoneXpath {
 
     public static void main(String[] args) throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
-        driver.get("https://www.amazon.in/");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
-        WebElement e1 = driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
-        e1.click();
-        Thread.sleep(2000);
-        Actions a1 = new Actions(driver);
-        a1.sendKeys("iphone").sendKeys(Keys.ENTER).build().perform();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
+        driver.get("https://www.amazon.com/events/wintersale?ref_=nav_cs_gb");
+        //driver.findElement(By.xpath("(//div[@class='nav-fill'])[3]//a[1]")).click();
+        List<WebElement> l1 = driver.findElements(By.xpath("//span[text()='Limited time deal']/following::span[2]"));
+        int size = l1.size();
 
+        for(int i=0; i<size-1; i++){
 
+            System.out.println(l1.get(i).getText());
+        }
 
-
+        driver.quit();
 
 
     }
