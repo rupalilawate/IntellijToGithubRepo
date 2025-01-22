@@ -15,6 +15,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class CrossBrowserTest {
+
     WebDriver driver;
     FirefoxOptions firefoxoptions = new FirefoxOptions();
     ChromeOptions chromeoptions = new ChromeOptions();

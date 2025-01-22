@@ -5,7 +5,8 @@
         <parameter name="browser" value="chrome"></parameter>
         <classes>
             <class name="com.CrossBrowser.CrossBrowserTest">
-                <methods><include name="loginTest"/>
+                <methods>
+                    <include name="loginTest"/>
                 </methods>
             </class>
         </classes>
@@ -14,7 +15,8 @@
         <parameter name="browser" value="firefox"></parameter>
         <classes>
             <class name="com.CrossBrowser.CrossBrowserTest">
-                <methods><include name="loginTest"/>
+                <methods>
+                    <include name="loginTest"/>
                 </methods>
             </class>
         </classes>
@@ -23,7 +25,8 @@
         <parameter name="browser" value="edge"></parameter>
         <classes>
             <class name="com.CrossBrowser.CrossBrowserTest">
-                <methods><include name="loginTest"/>
+                <methods>
+                    <include name="loginTest"/>
                 </methods>
             </class>
         </classes>
